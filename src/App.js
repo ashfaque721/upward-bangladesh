@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 import Pagewrapper from './components/pagewrapper';
-
+import Home from './components/pages/home';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 class App extends React.Component {
   render() {
     return (
-      <Pagewrapper/>
+      <Router>
+        <Pagewrapper>
+          <Route path="/" component={Home}/>
+        </Pagewrapper>
+      </Router>
     );
   }
 }
