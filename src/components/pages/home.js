@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from '../common/Header';
 import image from '../assets/img/header-bg.jpg';
+import Services from '../common/Services';
 
 class Home extends Component{
     render() {
@@ -8,12 +9,13 @@ class Home extends Component{
             <div>
                 <Header
                     title="Welcome to Our Studio!"
-                    subTitle="IT'S NICE TO MEET YOU"
+                    subtitle="IT'S NICE TO MEET YOU"
                     buttonText="Tell me more"
                     link="/services"
                     showButton={true}
                     image={image}
                 />
+                <Services/>
             </div>
         )
     }
