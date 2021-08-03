@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Pagewrapper from './components/pagewrapper';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 // Pages
 import Home from './components/pages/home';
