@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 import Header from '../common/Header';
 import image from '../assets/img/header-bg.jpg';
+
+// Reusable Components
 import Services from '../common/Services';
+import Portfolio from '../common/Portfolio';
+import Team from '../common/Team';
+import Timeline from '../common/Timeline';
 
 class Home extends Component{
     render() {
@@ -16,6 +21,9 @@ class Home extends Component{
                     image={image}
                 />
                 <Services/>
+                <Portfolio/>
+                <Timeline/>
+                <Team/>
             </div>
         )
     }
