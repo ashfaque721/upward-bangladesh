@@ -8,6 +8,7 @@ import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Login from './components/pages/Login';
 import AdminWrapper from './components/AdminWrapper';
+import LoginWrapper from './components/LoggingWrapper';
 import Dashboard from './components/pages/Dashboard';
 
 class App extends Component {
@@ -19,9 +20,17 @@ class App extends Component {
           path="/admin"
           render={props => {
             return (
-              <AdminWrapper>
-                {this.props.auth.token? <Dashboard/> : <Login />}
-              </AdminWrapper>
+              <div>
+                {this.props.auth.token?
+                  <AdminWrapper>
+                    <Dashboard/>
+                  </AdminWrapper> 
+                :
+                  <LoginWrapper>
+                    <Login />
+                  </LoginWrapper>
+                }
+              </div>
             )
           }}
         />
