@@ -13,7 +13,7 @@ import Login from './components/pages/Login';
 import Dashboard from './components/pages/Admin/Dashboard';
 import Users from './components/pages/Admin/Users';
 import Posts from './components/pages/Admin/Posts';
-
+import AddPost from './components/pages/Admin/AddPost';
 import AdminWrapper from './components/AdminWrapper';
 import LoginWrapper from './components/LoggingWrapper';
 
@@ -29,6 +29,24 @@ class App extends Component {
                 {this.props.auth.token?
                   <AdminWrapper>
                     <Users/>
+                  </AdminWrapper> 
+                :
+                  <LoginWrapper>
+                    <Login />
+                  </LoginWrapper>
+                }
+              </div>
+            )
+          }}
+        />
+        <Route
+          path="/admin/posts/add"
+          render={props => {
+            return (
+              <div>
+                {this.props.auth.token?
+                  <AdminWrapper>
+                    <AddPost />
                   </AdminWrapper> 
                 :
                   <LoginWrapper>
