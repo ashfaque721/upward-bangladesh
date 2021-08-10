@@ -1,6 +1,7 @@
 const defaultState = {
     users: [],
-    posts: []
+    posts: [],
+    post: {}
 }
 
 const admin = (state = defaultState, action) => {
@@ -14,6 +15,40 @@ const admin = (state = defaultState, action) => {
             return {
                 ...state,
                 posts: action.payload
+            }
+        case 'POST_ADDED':
+            return {
+                ...state,
+                posts: state.posts.concat(action.payload),
+                post: action.payload
+            }
+        case 'GOT_SINGLE_POST':
+            return {
+                ...state,
+                post: action.payload,
+                posts: state.posts.map(p => {
+                    if(p.id === action.payload.id){
+                        return {
+                            ...p,
+                            ...action.payload
+                        }
+                    } else {
+                        return p
+                    }
+                })
+            }
+        case 'UPDATED_POST':
+            return {
+                ...state,
+                post: action.payload
+            }
+        case 'UPLOADED_FILE':
+            return {
+                ...state,
+                post: {
+                    ...state.post,
+                    PostImage: [action.payload]
+                }
             }
         default:
             return state
