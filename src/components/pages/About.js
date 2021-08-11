@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Header from '../common/Header';
-import image from '../assets/img/about.jpg'
-import Team from '../common/Team';
+import image from '../assets/img/banner1.png'
 import Timeline from '../common/Timeline';
 
 class About extends Component{
@@ -9,13 +8,9 @@ class About extends Component{
         return (
             <div>
                 <Header
-                        title="About Us"
-                        subtitle="It's really a great story"
-                        showButton={false}
-                        image={image}
-                    />
+                    image={image}
+                />
                 <Timeline/>
-                <Team/>    
             </div>
 
         );

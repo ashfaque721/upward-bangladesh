@@ -3980,6 +3980,10 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+.logo-img {
+  height: 80px;
+  width: auto;
+}
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -10970,11 +10974,12 @@ p {
   }
 }
 header.masthead {
+  height: 800px;
+  width: -webkit-fill-available;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
