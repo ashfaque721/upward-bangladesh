@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Pagewrapper from './components/pagewrapper';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
 
 // Pages
 import Home from './components/pages/home';
@@ -38,7 +37,7 @@ class App extends Component {
 
           <Route path="/contact" render={props => (
             <Pagewrapper>
-              <Contact {...props}/>
+                <Contact {...props}/>
             </Pagewrapper>
           )}/>
 
@@ -48,16 +47,5 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    auth: state.auth
-  }
-}
 
-const mapDispatchToProps = dispath => {
-  return {
-
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

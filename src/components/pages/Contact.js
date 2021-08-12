@@ -23,10 +23,10 @@ class Contact extends Component {
     render() {
         return (
             <section className="page-section" id="contact">
-                <div className="container">
+                <div className="container mt-5 mb-5">
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Contact Us</h2>
-                        <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h3 className="section-subheading text-muted">If you have any query, feel free to submit it. We're here to answer your valuable questions</h3>
                     </div>
                     <form id="contactForm" onSubmit={this.props.handleSubmit}>
                         <div className="row align-items-stretch mb-5">
@@ -56,9 +56,9 @@ export default withFormik({
         message: '',
     }),
     validationSchema: Yup.object().shape({
-        name: Yup.string().min(3, "Come on bro, your name is longer than 3 characters").required("You must give us your name"),
-        email: Yup.string().email("You need to give us a valid email").required("You must give us your email"),
-        phone: Yup.string().min(10, "Please give us your 10 digit phone number").max(15, "Your phone number is too long").required("We need your number"),
+        name: Yup.string().min(3, "Your name should be longer than 3 characters").required("Please provide us your name"),
+        email: Yup.string().email("A valid email is required").required("Please provide us your email"),
+        phone: Yup.string().min(10, "A valid phone number is required").max(15, "Your phone number is too long").required("Please provide us your phone number"),
         message: Yup.string().min(500, 'You need to provide us more detailed information').required("Message is required")
     }),
     handleSubmit: (values, { setSubmitting }) => {

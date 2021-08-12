@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from '../common/Header';
 import image from '../assets/img/banner1.png';
-
+import FocusArea from '../FocusArea';
 
 class Home extends Component{
     render() {
@@ -10,7 +10,9 @@ class Home extends Component{
                 <Header
                     image={image}
                 />
-                
+                <div>
+                    <FocusArea />
+                </div>
             </div>
         )
     }
