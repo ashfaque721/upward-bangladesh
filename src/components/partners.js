@@ -30,8 +30,8 @@ export default class PauseOnHover extends Component {
             pauseOnHover: true
         };
         return (
-            <div>
-                <h2>Our Partners</h2>
+            <div className="container-partner">
+                <h2 className="title">Our Partners</h2>
                 <Slider {...settings}>
                     <div>
                         <img src={alat} alt="alat" />

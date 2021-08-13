@@ -9,16 +9,17 @@ import TeamPage from './components/pages/Team';
 import FocusArea from './components/FocusArea';
 import ParticleBackground from './components/config/ParticleBackground';
 import PauseOnHover from './components/partners';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <Route exact={true} path="/" render={props => (
-          <>
+          <div>
           <Pagewrapper>
             <Home {...props} />
-            <div>
+            <div className="particles-js">
               <ParticleBackground />
               <div>
                 <FocusArea />
@@ -26,7 +27,7 @@ class App extends Component {
             </div>
           </Pagewrapper>
           <PauseOnHover />
-        </>
+        </div>
         )}
         />
 

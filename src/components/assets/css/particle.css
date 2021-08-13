@@ -7,6 +7,9 @@
     width: 100%;
     z-index: 1;
 }
+canvas {
+    display: block;
+}
 .a {
     position: relative;
     z-index: 999;
