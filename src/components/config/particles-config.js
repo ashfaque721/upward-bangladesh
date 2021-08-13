@@ -8,7 +8,7 @@ const particleConfig = {
         }
       },
       color: {
-        value: "#ffffff"
+        value: "#000000"
       },
       shape: {
         type: "circle",
@@ -107,6 +107,5 @@ const particleConfig = {
       }
     },
     retina_detect: true
-  };
-
+  }
 export default particleConfig;
