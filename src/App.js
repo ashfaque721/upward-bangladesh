@@ -8,12 +8,14 @@ import Contact from './components/pages/Contact';
 import TeamPage from './components/pages/Team';
 import FocusArea from './components/FocusArea';
 import ParticleBackground from './components/config/ParticleBackground';
+import PauseOnHover from './components/partners';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <Route exact={true} path="/" render={props => (
+          <>
           <Pagewrapper>
             <Home {...props} />
             <div>
@@ -23,6 +25,8 @@ class App extends Component {
               </div>
             </div>
           </Pagewrapper>
+          <PauseOnHover />
+        </>
         )}
         />
 
