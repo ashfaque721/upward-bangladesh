@@ -10,6 +10,7 @@ import FocusArea from './components/FocusArea';
 import ParticleBackground from './components/config/ParticleBackground';
 import PauseOnHover from './components/partners';
 import './App.css';
+import Cards from './components/Cards';
 
 class App extends Component {
   render() {
@@ -23,9 +24,12 @@ class App extends Component {
               <ParticleBackground />
               <div>
                 <FocusArea />
+                <hr />
               </div>
             </div>
           </Pagewrapper>
+          <Cards />
+          <hr />
           <PauseOnHover />
         </div>
         )}

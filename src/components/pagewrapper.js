@@ -17,7 +17,7 @@ class Pagewrapper extends Component {
                                 <li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/events">Events</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="https://courses.upwardbd.com/">Courses</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={{pathname: "https://courses.upwardbd.com/"}} target="_blank">Courses</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
                             </ul>
                         </div>

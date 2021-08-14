@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 .example {
     position: absolute !important;
-    height: 100%;
-    width: 100%;
     z-index: 1;
 }
 canvas {
