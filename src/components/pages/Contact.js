@@ -1,47 +1,101 @@
 import React, { Component } from 'react'
-import Field from '../common/Field';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
-
-const fields = {
-    sections: [
-        [
-            { name: 'name', elementName: 'input', type: 'text', placeholder: 'Your name' },
-            { name: 'email', elementName: 'input', type: 'email', placeholder: 'Your email' },
-            { name: 'phone', elementName: 'input', type: 'telnum', placeholder: 'Your phone number' },
-
-        ],
-        [
-            { name: 'message', elementName: 'textarea', type: 'text', placeholder: 'Type your message' }
-        ]
-    ]
-}
-
+import '../assets/css/contact.css';
 
 class Contact extends Component {
 
     render() {
         return (
-            <section className="page-section" id="contact">
-                <div className="container mt-5 mb-5">
-                    <div className="text-center">
-                        <h2 className="section-heading text-uppercase">Contact Us</h2>
-                        <h3 className="section-subheading text-muted">If you have any query, feel free to submit it. We're here to answer your valuable questions</h3>
-                    </div>
-                    <form id="contactForm" onSubmit={this.props.handleSubmit} style={{zIndex: 999}}>
-                        <div className="row align-items-stretch mb-5">
-                            {fields.sections.map((section, sectionIndex) => {
-                                return (
-                                    <div className='col-md-6' key={sectionIndex} style={{zIndex: 999}}>
-                                        {section.map((field, i) => {
-                                            return <Field {...field} key={i} value={this.props.values[field.name]} name={field.name} onChange={this.props.handleChange} onBlur={this.props.handleBlur} touched={(this.props.touched[field.name])} errors={this.props.errors[field.name]} />
-                                        })}
+            <section className="ftco-section">
+                <div className="container-fluid">
+                    <div className="row justify-content-center">
+                        <div className="col-md-12">
+                            <div className="wrapper">
+                                <div className="row no-gutters">
+                                    <div className="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+                                        <div className="contact-wrap w-100 p-md-5 p-4">
+                                            <h3 className="mb-4">Get in touch</h3>
+                                            <div id="form-message-warning" className="mb-4"></div>
+                                            <div id="form-message-success" className="mb-4">
+                                                Your message was sent, thank you!
+                                            </div>
+                                            <form id="contactForm" name="contactForm" className="contactForm">
+                                                <div className="row">
+                                                    <div className="col-md-6">
+                                                        <div className="form-group">
+                                                            <label className="label" htmlFor="name">Full Name</label>
+                                                            <input type="text" className="form-control" name="name" id="name"
+                                                                placeholder="Name" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <div className="form-group">
+                                                            <label className="label" htmlFor="email">Email Address</label>
+                                                            <input type="email" className="form-control" name="email" id="email"
+                                                                placeholder="Email" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <div className="form-group">
+                                                            <label className="label" htmlFor="subject">Subject</label>
+                                                            <input type="text" className="form-control" name="subject" id="subject"
+                                                                placeholder="Subject" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <div className="form-group">
+                                                            <label className="label" htmlFor="#">Message</label>
+                                                            <textarea name="message" className="form-control" id="message" cols="30"
+                                                                rows="4" placeholder="Message"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <div className="form-group">
+                                                            <input type="submit" value="Send Message" className="btn btn-primary" />
+                                                            <div className="submitting"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                )
-                            })}
+                                    <div className="col-lg-4 col-md-5 d-flex align-items-stretch">
+                                        <div className="info-wrap bg-primary w-100 p-md-5 p-4">
+                                            <h3>Let's get in touch</h3>
+                                            <p className="mb-4">We're open for any suggestion or just to have a chat</p>
+                                            <div className="dbox w-100 d-flex align-items-start">
+                                                <div className="icon d-flex align-items-center justify-content-center">
+                                                    <span className="fa fa-map-marker"></span>
+                                                </div>
+                                                <div className="text pl-3">
+                                                    <p><span>Address:</span> Dhaka, Bangladesh
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="dbox w-100 d-flex align-items-center">
+                                                <div className="icon d-flex align-items-center justify-content-center">
+                                                    <span className="fa fa-phone"></span>
+                                                </div>
+                                                <div className="text pl-3">
+                                                    <p><span>Phone:</span> <a href="tel:+8801648142566">+8801648142566</a></p>
+                                                </div>
+                                            </div>
+                                            <div className="dbox w-100 d-flex align-items-center">
+                                                <div className="icon d-flex align-items-center justify-content-center">
+                                                    <span className="fa fa-paper-plane"></span>
+                                                </div>
+                                                <div className="text pl-3">
+                                                    <p><span>Email:</span> <a
+                                                        href="mailto:info@upwardbd.com">info@upwardbd.com</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div style={{zIndex: 999}}><div className="text-center"><button className="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div></div>
-                    </form>
+                    </div>
                 </div>
             </section>
         )
