@@ -105,3 +105,20 @@ canvas {
     font-size: 1em;
     margin-top: 0.25em;
 }
+
+@media screen and (max-width: 768px) {
+    div{
+        align-items: center;
+    }
+    .title-big {
+        text-align: center;
+    }
+    .image {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .focus {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

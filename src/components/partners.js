@@ -21,13 +21,13 @@ import ysse from './assets/img/partners/ysse.png';
 export default class PauseOnHover extends Component {
     render() {
         var settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 2000,
-            pauseOnHover: true
+            autoplaySpeed: 1000,
+            pauseOnHover: false
         };
         return (
             <div className="container-partner">

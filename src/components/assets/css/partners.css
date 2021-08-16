@@ -13,3 +13,6 @@ img {
     font-family: 'Merriweather', serif;
     margin-bottom: 50px;
 }
+.slick-arrow {
+    display: none !important;
+}

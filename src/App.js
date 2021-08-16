@@ -12,6 +12,7 @@ import PauseOnHover from './components/partners';
 import './App.css';
 import Cards from './components/Cards';
 import ParticleBackground2 from './components/config/ParticleBackgroundContact';
+import Articles from './components/Articles';
 
 class App extends Component {
   render() {
@@ -47,6 +48,14 @@ class App extends Component {
         <Route path="/team" render={props => (
           <Pagewrapper>
             <TeamPage {...props} />
+          </Pagewrapper>
+        )}
+
+        />
+
+        <Route path="/articles" render={props => (
+          <Pagewrapper>
+            <Articles {...props} />
           </Pagewrapper>
         )}
 

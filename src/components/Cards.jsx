@@ -7,9 +7,9 @@ class Cards extends Component{
         return(
             <>
             <h2 className="title-card">Our Events</h2>
-            <div className="container-fluid d-flex justify-content-center">
-                <div className="row align-items-start">
-                    <div className="col-md-6">
+            <div className="container d-flex justify-content-center">
+                <div className="row">
+                    <div className="col-12 col-md-6">
                         <Card
                             img={img1}
                             title="Ascension 1.0"
@@ -17,7 +17,7 @@ class Cards extends Component{
                             link="https://www.facebook.com/events/s/ascension-10-presented-by-upwa/925258591307034/"
                         />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-12 col-md-6">
                         <Card
                             img={img2}
                             title="Ascension 2.0"
