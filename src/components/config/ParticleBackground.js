@@ -5,6 +5,6 @@ import '../assets/css/particle.css';
 
 export default function ParticleBackground() {
     return (
-        <Particles className="example" params={particleConfig} height="260vh"></Particles>
+        <Particles className="example" params={particleConfig} height="150vh"></Particles>
     );
 }

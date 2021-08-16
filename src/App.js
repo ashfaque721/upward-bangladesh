@@ -6,13 +6,11 @@ import Home from './components/pages/home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import TeamPage from './components/pages/Team';
-import FocusArea from './components/FocusArea';
-import ParticleBackground from './components/config/ParticleBackground';
-import PauseOnHover from './components/partners';
+// import ParticleBackground from './components/config/ParticleBackground';
 import './App.css';
-import Cards from './components/Cards';
-import ParticleBackground2 from './components/config/ParticleBackgroundContact';
 import Articles from './components/Articles';
+import Events from './Events';
+import { FooterContainer } from './components/Footer/containers/footer';
 
 class App extends Component {
   render() {
@@ -20,58 +18,58 @@ class App extends Component {
       <Router>
         <Route exact={true} path="/" render={props => (
           <div>
-          <Pagewrapper>
+            <Pagewrapper />
             <Home {...props} />
-            <div className="particles-js">
-              <ParticleBackground />
-              <div>
-                <FocusArea />
-                <hr />
-              </div>
-            </div>
-          </Pagewrapper>
-          <Cards />
-          <hr />
-          <PauseOnHover />
-        </div>
+            <FooterContainer />
+          </div>
         )}
         />
 
         <Route path="/about" render={props => (
-          <Pagewrapper>
+          <div>
+            <Pagewrapper />
             <About {...props} />
-          </Pagewrapper>
+            <FooterContainer />
+          </div>
         )}
 
         />
 
         <Route path="/team" render={props => (
-          <Pagewrapper>
+          <div>
+            <Pagewrapper />
             <TeamPage {...props} />
-          </Pagewrapper>
+            <FooterContainer />
+          </div>
         )}
 
         />
 
         <Route path="/articles" render={props => (
-          <Pagewrapper>
+          <div>
+            <Pagewrapper />
             <Articles {...props} />
-          </Pagewrapper>
+            <FooterContainer />
+          </div>
         )}
 
         />
 
         <Route path="/contact" render={props => (
           <div>
-          <Pagewrapper>
-            <div>
-              <ParticleBackground2 />  
-            </div>
+            <Pagewrapper />
             <Contact {...props} />
-          </Pagewrapper>
+            <FooterContainer />
           </div>
         )} />
 
+        <Route path="/events" render={props => (
+          <div>
+            <Pagewrapper />
+            <Events {...props} />
+            <FooterContainer />
+          </div>
+        )} />
 
       </Router>
     );

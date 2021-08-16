@@ -5,7 +5,7 @@ import img2 from './assets/img/events/2.png';
 class Cards extends Component{
     render(){
         return(
-            <>
+            <div className="container" style={{marginTop: "150px"}}>
             <h2 className="title-card">Our Events</h2>
             <div className="container d-flex justify-content-center">
                 <div className="row">
@@ -27,7 +27,7 @@ class Cards extends Component{
                     </div>
                 </div>
             </div>
-            </>
+            </div>
         );
     }
 }

@@ -106,6 +106,12 @@ canvas {
     margin-top: 0.25em;
 }
 
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .image {
+        margin-top: 350px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     div{
         align-items: center;
