@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/css/card.css'
-const Card = props => {
+const Card = (props) => {
     return(
         <div className="card text-center shadow">
             <div className="overflow">
