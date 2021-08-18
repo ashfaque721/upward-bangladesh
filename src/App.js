@@ -6,7 +6,7 @@ import Home from './components/pages/home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import TeamPage from './components/pages/Team';
-// import ParticleBackground from './components/config/ParticleBackground';
+import GalleryPage from './components/pages/GalleryPage';
 import './App.css';
 import Articles from './components/Articles';
 import Events from './Events';
@@ -67,6 +67,14 @@ class App extends Component {
           <div>
             <Pagewrapper />
             <Events {...props} />
+            <FooterContainer />
+          </div>
+        )} />
+
+        <Route path="/gallery" render={props => (
+          <div>
+            <Pagewrapper />
+            <GalleryPage {...props} />
             <FooterContainer />
           </div>
         )} />
