@@ -19,6 +19,7 @@ class Articles extends Component {
                                     <img src={article.img} alt={article.title} class="img-fluid radius-image visible-md" />
                                 </div>
                             </div>
+                            <hr />
                         </div>
                     )
                 })}
