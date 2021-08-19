@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../assets/css/admin.css';
 import promo from '../assets/videos/promo.mp4';
+
 class About extends Component{
     render() {
         return (
