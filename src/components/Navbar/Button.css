@@ -8,9 +8,9 @@
   outline: none;
   border: none;
   font-size: 18px;
-  color: #fff;
+  color: black;
   cursor: pointer;
-  background-color: var(--primary);
+  background-color: white;
 }
 
 .btn1:hover {
@@ -19,6 +19,6 @@
   background-color: transparent;
   color: #fff;
   border-radius: 4px;
-  border: 2px solid var(--primary);
+  border: 2px solid white;
   transition: all 0.3s ease-out;
 }
