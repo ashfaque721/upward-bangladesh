@@ -3,10 +3,14 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import DropdownJoin from './DropdownJoin';
+import logo from '../assets/img/LOGO.png';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  
+  const [dropdownJoin, setDropdownJoin] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -19,6 +23,15 @@ function Navbar() {
     }
   };
 
+  const onMouseEnterJoin = () => {
+    if (window.innerWidth < 960) {
+      setDropdownJoin(false);
+    } else {
+      setDropdownJoin(true);
+    }
+  };
+  
+
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -27,12 +40,19 @@ function Navbar() {
     }
   };
 
+  const onMouseLeaveJoin = () => {
+    if (window.innerWidth < 960) {
+      setDropdownJoin(false);
+    } else {
+      setDropdownJoin(false);
+    }
+  };
+
   return (
     <>
-      <nav className='navbar'>
+      <nav className='navbar fixed-top'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          EPIC
-          <i class='fab fa-firstdraft' />
+          <img className="visible-lg" src={logo} alt="upward" style={{height: "160px", width: "150px"}} />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -49,31 +69,44 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/services'
+              to='/about'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Services <i className='fas fa-caret-down' />
+              About Us <i className='fas fa-caret-down' />
             </Link>
             {dropdown && <Dropdown />}
           </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/events'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products
+              Events
             </Link>
           </li>
           <li className='nav-item'>
             <Link
-              to='/contact-us'
+              to='/contact'
               className='nav-links'
               onClick={closeMobileMenu}
             >
               Contact Us
             </Link>
+          </li>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnterJoin}
+            onMouseLeave={onMouseLeaveJoin}
+          >
+            <Link
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Join Us <i className='fas fa-caret-down' />
+            </Link>
+            {dropdownJoin && <DropdownJoin />}
           </li>
           <li>
             <Link
@@ -81,7 +114,7 @@ function Navbar() {
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
-              Sign Up
+              Donate
             </Link>
           </li>
         </ul>

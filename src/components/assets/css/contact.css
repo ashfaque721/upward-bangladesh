@@ -34,20 +34,13 @@
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
   
-  *,
-  *::before,
-  *::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
   
   html {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  
-  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block; }
+
   
   body {
     margin: 0;
@@ -90,12 +83,6 @@
     font-style: normal;
     line-height: inherit; }
   
-  ol,
-  ul,
-  dl {
-    margin-top: 0;
-    margin-bottom: 1rem; }
-  
   ol ol,
   ul ul,
   ol ul,
@@ -132,13 +119,6 @@
   sup {
     top: -.5em; }
   
-  a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent; }
-    a:hover {
-      color: #0056b3;
-      text-decoration: underline; }
   
   
   pre,
@@ -2525,24 +2505,6 @@
     .dropdown-toggle:empty::after {
       margin-left: 0; }
   
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem; }
   
   .dropdown-menu-left {
     right: auto;
@@ -3409,34 +3371,6 @@
   
   .tab-content > .active {
     display: block; }
-  
-  .navbar {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 0.5rem 1rem; }
-    .navbar > .container,
-    .navbar > .container-fluid {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   
   .navbar-brand {
     display: inline-block;
@@ -8124,16 +8058,6 @@
     background: #fafafa;
     color: black; }
   
-  a {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    color: #000; }
-    a:hover, a:focus {
-      text-decoration: none !important;
-      outline: none !important;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
   
   .h1, .h2, .h3, .h4, .h5 {
     line-height: 1.5;

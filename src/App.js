@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Pagewrapper from './components/pagewrapper';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // Pages
 import Home from './components/pages/home';
@@ -11,6 +10,7 @@ import './App.css';
 import Articles from './components/Articles';
 import Events from './Events';
 import { FooterContainer } from './components/Footer/containers/footer';
+import Navbar from './components/Navbar/Navbar';
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
       <Router>
         <Route exact={true} path="/" render={props => (
           <div>
-            <Pagewrapper />
+            <Navbar />
             <Home {...props} />
             <FooterContainer />
           </div>
@@ -27,7 +27,7 @@ class App extends Component {
 
         <Route path="/about" render={props => (
           <div>
-            <Pagewrapper />
+            <Navbar />
             <About {...props} />
             <FooterContainer />
           </div>
@@ -37,7 +37,7 @@ class App extends Component {
 
         <Route path="/team" render={props => (
           <div>
-            <Pagewrapper />
+            <Navbar />
             <TeamPage {...props} />
             <FooterContainer />
           </div>
@@ -47,7 +47,7 @@ class App extends Component {
 
         <Route path="/articles" render={props => (
           <div>
-            <Pagewrapper />
+            <Navbar />
             <Articles {...props} />
             <FooterContainer />
           </div>
@@ -57,7 +57,7 @@ class App extends Component {
 
         <Route path="/contact" render={props => (
           <div>
-            <Pagewrapper />
+            <Navbar />
             <Contact {...props} />
             <FooterContainer />
           </div>
@@ -65,7 +65,7 @@ class App extends Component {
 
         <Route path="/events" render={props => (
           <div>
-            <Pagewrapper />
+            <Navbar />
             <Events {...props} />
             <FooterContainer />
           </div>
@@ -73,7 +73,7 @@ class App extends Component {
 
         <Route path="/gallery" render={props => (
           <div>
-            <Pagewrapper />
+            <Navbar />
             <GalleryPage {...props} />
             <FooterContainer />
           </div>
