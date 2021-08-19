@@ -1,0 +1,10 @@
+.donate-title {
+    text-align: left;
+}
+.donate-text {
+    text-align: right;
+    font-size: 19px;
+}
+.donate {
+    background-color: gray;
+}

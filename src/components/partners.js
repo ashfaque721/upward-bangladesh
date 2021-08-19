@@ -31,7 +31,7 @@ export default class PauseOnHover extends Component {
         };
         return (
             <div className="container-partner">
-                <h2 className="title">Our Partners</h2>
+                <h2 className="title">We Have Already Collaborated With</h2>
                 <Slider {...settings}>
                     <div>
                         <img src={alat} alt="alat" />

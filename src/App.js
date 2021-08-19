@@ -11,6 +11,8 @@ import Articles from './components/Articles';
 import Events from './Events';
 import { FooterContainer } from './components/Footer/containers/footer';
 import Navbar from './components/Navbar/Navbar';
+import CardCollabs from './components/Collaborations';
+import Donate from './components/Donate';
 
 class App extends Component {
   render() {
@@ -75,6 +77,22 @@ class App extends Component {
           <div>
             <Navbar />
             <GalleryPage {...props} />
+            <FooterContainer />
+          </div>
+        )} />
+
+        <Route path="/collaborations" render={props => (
+          <div>
+            <Navbar />
+            <CardCollabs />
+            <FooterContainer />
+          </div>
+        )} />
+
+        <Route path="/donate" render={props => (
+          <div>
+            <Navbar />
+            <Donate />
             <FooterContainer />
           </div>
         )} />
