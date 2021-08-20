@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 import DropdownJoin from './DropdownJoin';
+import DropdownEvent from './DropdownEvent';
 import logo from '../assets/img/LOGO.png';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
   
+  const [dropdown, setDropdown] = useState(false);
+  const [dropdownEvent, setDropdownEvent] = useState(false);
   const [dropdownJoin, setDropdownJoin] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -31,6 +33,13 @@ function Navbar() {
     }
   };
   
+  const onMouseEnterEvent = () => {
+    if (window.innerWidth < 960) {
+      setDropdownEvent(false);
+    } else {
+      setDropdownEvent(true);
+    }
+  };
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
@@ -45,6 +54,14 @@ function Navbar() {
       setDropdownJoin(false);
     } else {
       setDropdownJoin(false);
+    }
+  };
+
+  const onMouseLeaveEvent = () => {
+    if (window.innerWidth < 960) {
+      setDropdownEvent(false);
+    } else {
+      setDropdownEvent(false);
     }
   };
 
@@ -77,14 +94,18 @@ function Navbar() {
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className='nav-item'>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnterEvent}
+            onMouseLeave={onMouseLeaveEvent}>
             <Link
               to='/events'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Events
+              Events <i className='fas fa-caret-down' />
             </Link>
+            {dropdownEvent && <DropdownEvent/>}
           </li>
           <li className='nav-item'>
             <Link
