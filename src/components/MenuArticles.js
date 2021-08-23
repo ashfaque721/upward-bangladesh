@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { contentMenu } from './MenuArticleItems';
-import './assets/css/articles.css';
 class MenuArticles extends Component {
     render() {
         return (
