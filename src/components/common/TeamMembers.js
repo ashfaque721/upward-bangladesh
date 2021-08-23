@@ -9,7 +9,7 @@ class TeamMembers extends Component{
                     <h4>{this.props.name}</h4>
                     <p className="text-muted">{this.props.designation}</p>
                     <a className="btn btn-dark btn-social mx-2" href={this.props.fb}><i className="fab fa-facebook-f"></i></a>
-                    <a className="btn btn-dark btn-social mx-2" href={this.props.ig}><i className="fab fa-instagram"></i></a>
+                    <a className="btn btn-dark btn-social mx-2" href={this.props.ig}><i className="fab fa-linkedin"></i></a>
                 </div>
             </div>
         )

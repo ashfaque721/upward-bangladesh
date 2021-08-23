@@ -4,6 +4,7 @@ import image from '../assets/img/banner1.png';
 import ParticleBackground from '../config/ParticleBackground';
 import FocusArea from '../FocusArea';
 import PauseOnHover from '../partners';
+import MenuArticles from '../MenuArticles';
 
 class Home extends Component {
     render() {
@@ -19,6 +20,7 @@ class Home extends Component {
                         <hr />
                     </div>
                 </div>
+                <MenuArticles />
                 <PauseOnHover />
             </div>
         )
