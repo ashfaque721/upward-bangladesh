@@ -25,6 +25,7 @@ class MenuArticles extends Component {
                 <div className="text-center">
                     <a href="/articles"><button className="a text-center">View Articles</button></a>
                 </div>
+                <hr />
             </div>
         )
     }
