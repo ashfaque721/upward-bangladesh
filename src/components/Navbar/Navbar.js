@@ -135,7 +135,7 @@ function Navbar() {
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
-              Donate
+              Sponsor US
             </Link>
           </li>
         </ul>

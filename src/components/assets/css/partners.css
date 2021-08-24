@@ -9,10 +9,26 @@ img {
 }
 .title {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Merriweather', serif;
     margin-bottom: 50px;
 }
 .slick-arrow {
     display: none !important;
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+}
+@media (max-width: 499px) {
+    .title {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+}
+@media (max-width: 414px) {
+    .title{
+        font-size: 20px;
+    }
 }

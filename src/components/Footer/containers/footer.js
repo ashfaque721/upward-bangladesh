@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Footer from '../components/footer'
 import Icon from '../components/icons'
 import img from '../../assets/img/LOGO.png';
@@ -13,10 +13,10 @@ export function FooterContainer() {
                     </Footer.Column>
                     <Footer.Column>
                         <Footer.Title>About Us</Footer.Title>
-                        <Footer.Link href="/about">Overview</Footer.Link>
-                        <Footer.Link href="/gallery">Gallery</Footer.Link>
-                        <Footer.Link href="/articles">Articles</Footer.Link>
-                        <Footer.Link href="/team">Team</Footer.Link>
+                        <Footer.Link href="about">Overview</Footer.Link>
+                        <Footer.Link href="gallery">Gallery</Footer.Link>
+                        <Footer.Link href="articles">Articles</Footer.Link>
+                        <Footer.Link href="team">Team</Footer.Link>
                     </Footer.Column>
                     <Footer.Column>
                         <Footer.Title>Contact Us</Footer.Title>
@@ -35,8 +35,8 @@ export function FooterContainer() {
                 </Footer.Row>
                 <Footer.Row>
                     <Footer.Column>
-                        <Footer.Link href="#">Privacy Policy</Footer.Link>
-                        <Footer.Link href="#">Terms and Conditions</Footer.Link>
+                        <Footer.Link href="privacy-policy">Privacy Policy</Footer.Link>
+                        <Footer.Link href="terms-and-conditions">Terms and Conditions</Footer.Link>
                     </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>

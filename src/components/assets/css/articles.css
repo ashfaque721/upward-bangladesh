@@ -32,4 +32,33 @@
     .visible-md {
         display: none;
     }
+    .title3 {
+        font-size: 55px;
+    }
+    .article-header {
+        font-size: 40px;
+    }
+}
+@media (max-height: 576px) {
+    .article-btn {
+        width: 147px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 499px) {
+    .title3 {
+        font-size: 45px;
+    }
+    .article-header {
+        font-size: 33px;
+    }
+}
+@media (max-width: 414px) {
+    .title3 {
+        font-size: 40px;
+    }
+    .article-header {
+        font-size: 33px;
+    }
 }

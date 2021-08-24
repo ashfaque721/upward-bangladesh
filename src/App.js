@@ -13,6 +13,8 @@ import { FooterContainer } from './components/Footer/containers/footer';
 import Navbar from './components/Navbar/Navbar';
 import CardCollabs from './components/Collaborations';
 import Donate from './components/Donate';
+import Terms from './components/TermsAndConditions';
+import Privacy from './components/PrivacyPolicy';
 
 class App extends Component {
   render() {
@@ -93,6 +95,22 @@ class App extends Component {
           <div>
             <Navbar />
             <Donate />
+            <FooterContainer />
+          </div>
+        )} />
+
+        <Route path="/terms-and-conditions" render={props => (
+          <div>
+            <Navbar />
+            <Terms />
+            <FooterContainer />
+          </div>
+        )} />
+
+        <Route path="/privacy-policy" render={props => (
+          <div>
+            <Navbar />
+            <Privacy />
             <FooterContainer />
           </div>
         )} />
