@@ -4,7 +4,7 @@ class Privacy extends Component {
     render() {
         return (
             <div className="container">
-                <h2 className="title" className="text-center" style={{marginTop: '90px'}}>Privacy Policy for Upward Bangladesh</h2> <br />
+                <h2 className="title text-center" style={{marginTop: '90px'}}>Privacy Policy for Upward Bangladesh</h2> <br />
 
                 <p className="text-center">At Upward Bd, accessible from <a href=" https://upwardbd.com/" >Upward Bangladesh</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Upward Bd and how we use it.
 
@@ -12,16 +12,16 @@ class Privacy extends Component {
 
                     This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Upward Bd. This policy is not applicable to any information collected offline or via channels other than this website.</p>
                 <br />
-                <h3 className="title" className="text-center">Consent</h3> <br />
+                <h3 className="title text-center">Consent</h3> <br />
                 <p className="text-center">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p><br />
 
 
 
-                <h3 className="title" className="text-center">Information we collect</h3> <br />
+                <h3 className="title text-center">Information we collect</h3> <br />
                 <p className="text-center">The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
                     If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
                 <br />
-                <h3 className="title" className="text-center" >How we use your information</h3> <br />
+                <h3 className="title text-center">How we use your information</h3> <br />
                 <p className="text-center">We use the information we collect in various ways, including to:</p>
 
                 <ul className="text-left">
