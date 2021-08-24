@@ -107,6 +107,7 @@ function Navbar() {
             </Link>
             {dropdownEvent && <DropdownEvent/>}
           </li>
+          
           <li className='nav-item'>
             <Link
               to='/contact'
@@ -131,11 +132,11 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to='/donate'
+              to='/courses'
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
-              Sponsor US
+              Courses
             </Link>
           </li>
         </ul>

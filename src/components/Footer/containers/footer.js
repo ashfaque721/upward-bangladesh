@@ -23,7 +23,7 @@ export function FooterContainer() {
                         <Footer.Link href="#">Address : Dhaka , Bangladesh
                         </Footer.Link>
                         <Footer.Link href="mailto:info@upwardbd.com">E-mail :info@upwardbd.com</Footer.Link>
-                        <Footer.Link href="#">Support us</Footer.Link>
+                        <Footer.Link href="/sponsor">Sponsor Us</Footer.Link>
                     </Footer.Column>
                     <Footer.Column>
                         <Footer.Title>Social</Footer.Title>

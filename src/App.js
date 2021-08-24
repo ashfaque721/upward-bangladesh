@@ -15,6 +15,7 @@ import CardCollabs from './components/Collaborations';
 import Donate from './components/Donate';
 import Terms from './components/TermsAndConditions';
 import Privacy from './components/PrivacyPolicy';
+import Courses from './components/Courses';
 
 class App extends Component {
   render() {
@@ -91,7 +92,7 @@ class App extends Component {
           </div>
         )} />
 
-        <Route path="/donate" render={props => (
+        <Route path="/sponsor" render={props => (
           <div>
             <Navbar />
             <Donate />
@@ -111,6 +112,14 @@ class App extends Component {
           <div>
             <Navbar />
             <Privacy />
+            <FooterContainer />
+          </div>
+        )} />
+
+        <Route path="/courses" render={props => (
+          <div>
+            <Navbar />
+            <Courses />
             <FooterContainer />
           </div>
         )} />
