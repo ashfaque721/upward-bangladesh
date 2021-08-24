@@ -20,7 +20,7 @@ const teamMembers = [
     {name: 'Ritovash Chanda', designation: 'Chief of Creations', image: ritovash, fb: 'https://www.facebook.com/ritovashch', linked: 'https://www.linkedin.com/in/ritovash-chanda-4a7765219'},
     {name: 'Shemonti Rodosi', designation: 'Content Creation Co-Ordinator', image: shemonti, fb: 'https://www.facebook.com/shemonti.rodosi.5', linked: ''},
     {name: 'Tasfia Hoque Chittra', designation: 'Public Relations Co-Ordinator', image: chittra, fb: 'https://www.facebook.com/hoque.chittu', linked: ''},
-    {name: 'Ashfaque Amin Eshan', designation: 'Networking Operations Co-Ordinator', image: eshan, fb: 'https://www.facebook.com/ashfaqueamin.eshan', linked: ''},
+    {name: 'Ashfaque Amin Eshan', designation: 'Networking Operations Co-Ordinator', image: eshan, fb: 'https://www.facebook.com/ashfaqueamin.eshan', linked: 'https://www.linkedin.com/in/ashfaque-amin-eshan-b1683921a/'},
     {name: 'MD Zunayed Howladar', designation: 'Video Creations Co-Ordinator', image: zunayed, fb: 'https://facebook.com/md.zunayedhowlader.9', linked: 'https://www.linkedin.com/in/md-zunayed-howlader-7bb035211/'},
     {name: 'Mahir Daiyan Neon', designation: 'Administration Co-Ordinator', image: mahir, fb: 'https://www.facebook.com/Sarcastic.Plastic3', linked: 'https://www.linkedin.com/in/mahir-daiyan-neon/'},
     {name: 'Arijit Roy', designation: 'Publications Co-Ordinator', image: arijit, fb: 'https://www.facebook.com/ari.sheeeeet', linked: ''},
