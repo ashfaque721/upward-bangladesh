@@ -5,6 +5,7 @@ import ParticleBackground from '../config/ParticleBackground';
 import FocusArea from '../FocusArea';
 import PauseOnHover from '../partners';
 import MenuArticles from '../MenuArticles';
+import Testimonial from '../Testimonials';
 
 class Home extends Component {
     render() {
@@ -21,6 +22,7 @@ class Home extends Component {
                     </div>
                 </div>
                 <MenuArticles />
+                <Testimonial />
                 <PauseOnHover />
             </div>
         )

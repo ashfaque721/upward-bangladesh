@@ -13,9 +13,6 @@ img {
     font-family: 'Merriweather', serif;
     margin-bottom: 50px;
 }
-.slick-arrow {
-    display: none !important;
-}
 @media (max-width: 768px) {
     .title {
         font-size: 40px;
