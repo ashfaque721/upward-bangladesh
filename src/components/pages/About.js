@@ -26,7 +26,8 @@ class About extends Component {
                                     <h3 className="p-3 bg-dark text-white mr-3" style={{ fontSize: 18 }}>Vision:</h3>
                                     <p className="col-md-12 p-3 mb-2 description text-secondary" style={{ float: "inline-end" }}>Upward Bangladesh’s vision is to pioneer a movement transforming the young prospects of our country in an expert and adept human resource contributing to the growth of Bangladesh’s economy.</p>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="vl"></div>
+                                <div className="col-md-6 ml-auto">
                                     <h3 className="p-3 bg-dark text-white mr-3" style={{ fontSize: 18 }}>Mission:</h3>
                                     <p className="description text-secondary">We dream of a country where the young prospects will not be tired of finding jobs and will be confident enough to start something on their own and create more opportunities for others. With this aim in mind, we plan to organize workshops and events which we believe would help to develop various skills of our community members.</p>
                                 </div>

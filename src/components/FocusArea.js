@@ -22,7 +22,7 @@ class FocusArea extends Component {
                                         <div className="image-title">Youth Empowerment</div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-sm-4 image mt-5">
+                                <div className="col-md-6 col-sm-4 image mt-5">
                                     <img src={skill_dev_img} alt="" className="img-fluid image-img radius-image" />
                                     <div className="image-overlay">
                                         <div className="image-title">Skill Development</div>

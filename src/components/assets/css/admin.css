@@ -5,3 +5,12 @@
 .left {
     text-align: right;
 }
+.vl {
+    border-left: 2px dotted black;
+    height: 290px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-right: -3px;
+    top: 0;
+  }

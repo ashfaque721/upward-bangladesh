@@ -6,6 +6,7 @@ import { Avatar } from "@material-ui/core";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import img1 from './assets/img/testimonial/yousuf.webp';
 import img2 from './assets/img/testimonial/nuri.jpg';
+import img3 from './assets/img/testimonial/fuad.jpg';
 
 const PreviousBtn = (props) => {
   console.log(props);
@@ -46,10 +47,11 @@ const Testimonial = () => {
             designation="Head of Idea Modulation, Easecom"
           />
           <CardTestimonial
-            img={img2}
+            img={img3}
             text="According to Ralph Waldo Emerson, “The search after the great men is the dream of youth, and the most serious occupation of manhood.” Today’s youth does not believe in saving for a rainy day. On the other hand, they believe that one should never let the rainy days come. So, they live in the moment and believe in seizing the day. To work with youth is always something impressive. ‘Upward Bangladesh is the organization, carry on this impressive task with young characters. Ascension 2.0 was a well-organized event powered by Upward Bangladesh where I, Abu M. Fuad had performed as a Trainer of ‘Event Management’. I was pleased to see such immense responses from the young. Thanks to ‘Upward Bangladesh’ to prepare the field for my vital role. I tried my best to enhance the youths as much as I can from my side. There’ll be some more segments for the upcoming events. As youth are energetic and have the potential to strive hard for a better so, they can transform this world. Upward Bangladesh is leading towards these uprisings."
             name="Abu M. Fuad"
-            designation="Head of Idea Modulation, Easecom"
+            designation="County Director, All India Council For Robotics & Automation"
+            designation2="CEO, Ektukhani Robotics"
           />
         </Slider>
       </div>
@@ -72,8 +74,8 @@ const CardTestimonial = ({ img, text, name, designation, designation2 }) => {
         imgProps={{ style: { borderRadius: "50%" } }}
         src={img}
         style={{
-          width: 120,
-          height: 120,
+          width: 125,
+          height: 125,
           padding: 7,
           marginBottom: 20,
         }}
