@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { MenuItemsJoin } from './MenuItemsJoin';
+import { MenuItemsJoinLink, MenuItemsJoin } from './MenuItemsJoin';
+import { Link } from 'react-router-dom';
 import './Dropdown.css';
 
 function Dropdown() {
@@ -13,6 +14,21 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
+        {MenuItemsJoinLink.map((item, index) => {
+          return (
+            <li key={index}>
+              <Link
+                className={item.cName}
+                to={item.path}
+                target={item.target}
+                rel={item.rel}
+                onClick={() => setClick(false)}
+              >
+                {item.title}
+              </Link>
+            </li>
+          );
+        })}
         {MenuItemsJoin.map((item, index) => {
           return (
             <li key={index}>
