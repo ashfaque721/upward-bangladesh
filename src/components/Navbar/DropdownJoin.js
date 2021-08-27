@@ -19,8 +19,8 @@ function Dropdown() {
               <a
                 className={item.cName}
                 href={item.path}
-                target="_blank"
-                rel="noreferrer"
+                target={item.target}
+                rel={item.rel}
                 onClick={() => setClick(false)}
               >
                 {item.title}

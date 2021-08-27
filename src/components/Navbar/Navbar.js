@@ -126,7 +126,7 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Join Us <i className='fas fa-caret-down' />
+              Get Involved <i className='fas fa-caret-down' />
             </Link>
             {dropdownJoin && <DropdownJoin />}
           </li>

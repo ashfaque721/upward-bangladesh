@@ -16,11 +16,14 @@ import Donate from './components/Donate';
 import Terms from './components/TermsAndConditions';
 import Privacy from './components/PrivacyPolicy';
 import Courses from './components/Courses';
+import ScrollToTop from './components/ScrollToTop';
+import Collab from './components/CollabUs';
 
 class App extends Component {
   render() {
     return (
       <Router>
+        <ScrollToTop />
         <Route exact={true} path="/" render={props => (
           <div>
             <Navbar />
@@ -120,6 +123,14 @@ class App extends Component {
           <div>
             <Navbar />
             <Courses />
+            <FooterContainer />
+          </div>
+        )} />
+        
+        <Route path="/collab-with-us" render={props => (
+          <div>
+            <Navbar />
+            <Collab />
             <FooterContainer />
           </div>
         )} />

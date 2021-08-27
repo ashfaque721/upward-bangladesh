@@ -29,8 +29,8 @@ export function FooterContainer() {
                         <Footer.Title>Social</Footer.Title>
                         <Footer.Link href="https://www.facebook.com/UpwardBD" target="_blank"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
                         <Footer.Link href="https://www.linkedin.com/company/upward-bangladesh" target="_blank"><Icon className="fab fa-linkedin" />Linked In</Footer.Link>
-                        <Footer.Link href="#"><Icon className="fab fa-youtube" />Youtube</Footer.Link>
-                        <Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
+                        <Footer.Link href="https://www.youtube.com/channel/UCMKUFRHSOWGWjvhKdqAotKQ" target="_blank"><Icon className="fab fa-youtube" />Youtube</Footer.Link>
+                        <Footer.Link href="https://www.instagram.com/upward.bd/?hl=en"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
                     </Footer.Column>
                 </Footer.Row>
                 <Footer.Row>

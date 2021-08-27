@@ -32,10 +32,10 @@ const Testimonial = () => {
     >
       <div style={{ width: "50%", textAlign: "center" }}>
         <h1 style={{ marginBottom: 20 }}>What Well-wishers Say About Us</h1>
-        <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
+        <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots autoplay={true}>
           <CardTestimonial
             img={img1}
-            text="Receive warm greetings from YSSE. We feel delighted to state that we are very pleased to work with your organization as your strategic partner. We really appreciate every work of Upward Bangladesh. Ysse team wish you luck and success for your upcoming event and project. Thank you."
+            text="We really appreciate every work of Upward Bangladesh. Ysse team wish you luck and success for your upcoming event and project. Thank you."
             name="Sheikh Mohammad Yousuf Hossain"
             designation="Founder and President, Youth School For Social Entrepreneurs"
           />
@@ -43,7 +43,13 @@ const Testimonial = () => {
             img={img2}
             text="Being a part of both Ascension 1.0 and Ascension 2.0 has made me a witness of the immense growth of Upward Bangladesh. I have come to know some young minds full of potential through these events. They are open to opportunities and always eager to learn. Upward Bangladesh has a great future ahead and I wish them all the best."
             name="Noushin Nuri"
-            designation=""
+            designation="Head of Idea Modulation, Easecom"
+          />
+          <CardTestimonial
+            img={img2}
+            text="According to Ralph Waldo Emerson, “The search after the great men is the dream of youth, and the most serious occupation of manhood.” Today’s youth does not believe in saving for a rainy day. On the other hand, they believe that one should never let the rainy days come. So, they live in the moment and believe in seizing the day. To work with youth is always something impressive. ‘Upward Bangladesh is the organization, carry on this impressive task with young characters. Ascension 2.0 was a well-organized event powered by Upward Bangladesh where I, Abu M. Fuad had performed as a Trainer of ‘Event Management’. I was pleased to see such immense responses from the young. Thanks to ‘Upward Bangladesh’ to prepare the field for my vital role. I tried my best to enhance the youths as much as I can from my side. There’ll be some more segments for the upcoming events. As youth are energetic and have the potential to strive hard for a better so, they can transform this world. Upward Bangladesh is leading towards these uprisings."
+            name="Abu M. Fuad"
+            designation="Head of Idea Modulation, Easecom"
           />
         </Slider>
       </div>
@@ -51,7 +57,7 @@ const Testimonial = () => {
   );
 };
 
-const CardTestimonial = ({ img, text, name, designation }) => {
+const CardTestimonial = ({ img, text, name, designation, designation2 }) => {
   return (
     <div
       style={{
@@ -75,9 +81,12 @@ const CardTestimonial = ({ img, text, name, designation }) => {
       <p>
         {text}
       </p>
-      <span style={{ fontWeight: 1500, fontFamily: "sans-serif"}}>- {name}</span>
+      <span style={{ fontWeight: 1500, fontFamily: "sans-serif" }}>- {name}</span>
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
         {designation}
+      </p>
+      <p style={{ fontStyle: "italic" }}>
+        {designation2}
       </p>
     </div>
   );
