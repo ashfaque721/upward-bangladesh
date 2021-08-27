@@ -18,6 +18,7 @@ import Privacy from './components/PrivacyPolicy';
 import Courses from './components/Courses';
 import ScrollToTop from './components/ScrollToTop';
 import Collab from './components/CollabUs';
+import DevelopedBy from './components/DevelopedBy';
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
             <Navbar />
             <Home {...props} />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )}
         />
@@ -38,6 +40,7 @@ class App extends Component {
             <Navbar />
             <About {...props} />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )}
 
@@ -48,6 +51,7 @@ class App extends Component {
             <Navbar />
             <TeamPage {...props} />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )}
 
@@ -58,6 +62,7 @@ class App extends Component {
             <Navbar />
             <Articles {...props} />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )}
 
@@ -68,6 +73,7 @@ class App extends Component {
             <Navbar />
             <Contact {...props} />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 
@@ -76,6 +82,7 @@ class App extends Component {
             <Navbar />
             <Events {...props} />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 
@@ -84,6 +91,7 @@ class App extends Component {
             <Navbar />
             <GalleryPage {...props} />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 
@@ -92,6 +100,7 @@ class App extends Component {
             <Navbar />
             <CardCollabs />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 
@@ -100,6 +109,7 @@ class App extends Component {
             <Navbar />
             <Donate />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 
@@ -108,6 +118,7 @@ class App extends Component {
             <Navbar />
             <Terms />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 
@@ -116,6 +127,7 @@ class App extends Component {
             <Navbar />
             <Privacy />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 
@@ -124,6 +136,7 @@ class App extends Component {
             <Navbar />
             <Courses />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
         
@@ -132,6 +145,7 @@ class App extends Component {
             <Navbar />
             <Collab />
             <FooterContainer />
+            <DevelopedBy />
           </div>
         )} />
 

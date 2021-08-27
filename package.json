@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": "https://upwardbd.com",
+  "homepage": "http://upwardbd.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
