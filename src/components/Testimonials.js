@@ -48,7 +48,7 @@ const Testimonial = () => {
           />
           <CardTestimonial
             img={img3}
-            text="According to Ralph Waldo Emerson, “The search after the great men is the dream of youth, and the most serious occupation of manhood.” Today’s youth does not believe in saving for a rainy day. On the other hand, they believe that one should never let the rainy days come. So, they live in the moment and believe in seizing the day. To work with youth is always something impressive. ‘Upward Bangladesh is the organization, carry on this impressive task with young characters. Ascension 2.0 was a well-organized event powered by Upward Bangladesh where I, Abu M. Fuad had performed as a Trainer of ‘Event Management’. I was pleased to see such immense responses from the young. Thanks to ‘Upward Bangladesh’ to prepare the field for my vital role. I tried my best to enhance the youths as much as I can from my side. There’ll be some more segments for the upcoming events. As youth are energetic and have the potential to strive hard for a better so, they can transform this world. Upward Bangladesh is leading towards these uprisings."
+            text="Upward Bangladesh is the organization, carry on this impressive task with young characters. Ascension 2.0 was a well-organized event powered by Upward Bangladesh where I, Abu M. Fuad had performed as a Trainer of ‘Event Management’. I was pleased to see such immense responses from the young. Thanks to ‘Upward Bangladesh’ to prepare the field for my vital role. Upward Bangladesh is leading towards these uprisings."
             name="Abu M. Fuad"
             designation="County Director, All India Council For Robotics & Automation"
             designation2="CEO, Ektukhani Robotics"
