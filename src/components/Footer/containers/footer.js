@@ -9,7 +9,9 @@ export function FooterContainer() {
             <Footer.Wrapper>
                 <Footer.Row>
                     <Footer.Column>
-                        <Footer.Link href="/"><img src={img} alt="upward" style={{height: "150px", width: "125px"}} /></Footer.Link>
+                        <Footer.Link href="/"><img src={img} alt="upward" style={{height: "150px", width: "150px"}} /></Footer.Link>
+                        <Footer.Link href="privacy-policy" style={{marginLeft: 20}}>Privacy Policy</Footer.Link>
+                        <Footer.Link href="terms-and-conditions" style={{marginLeft: 20}}>Terms and Conditions</Footer.Link>
                     </Footer.Column>
                     <Footer.Column>
                         <Footer.Title>About Us</Footer.Title>
@@ -31,12 +33,6 @@ export function FooterContainer() {
                         <Footer.Link href="https://www.linkedin.com/company/upward-bangladesh" target="_blank"><Icon className="fab fa-linkedin" />Linked In</Footer.Link>
                         <Footer.Link href="https://www.youtube.com/channel/UCMKUFRHSOWGWjvhKdqAotKQ" target="_blank"><Icon className="fab fa-youtube" />Youtube</Footer.Link>
                         <Footer.Link href="https://www.instagram.com/upward.bd/?hl=en" target="_blank"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
-                    </Footer.Column>
-                </Footer.Row>
-                <Footer.Row>
-                    <Footer.Column>
-                        <Footer.Link href="privacy-policy">Privacy Policy</Footer.Link>
-                        <Footer.Link href="terms-and-conditions">Terms and Conditions</Footer.Link>
                     </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>
