@@ -24,3 +24,15 @@
 .testimonial .slick-dots li {
   top: 15px;
 }
+
+@media (max-width: 768px) {
+  .testimonial-header {
+    font-size: 23px;
+  }
+}
+@media (max-width: 550px) {
+  .testimonial .slick-arrow.slick-prev,
+  .testimonial .slick-arrow.slick-next {
+    display: none;
+  }
+}

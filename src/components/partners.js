@@ -27,7 +27,8 @@ export default class PauseOnHover extends Component {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 1000,
-            pauseOnHover: false
+            pauseOnHover: false,
+            arrows: false
         };
         return (
             <div className="container-partner">

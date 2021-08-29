@@ -1,0 +1,20 @@
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px
+}
+.footer-link:hover {
+    color: #ff9c00;
+    transition: 200ms ease-in;
+}
+.terms {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .terms {
+        margin-left: 0;
+    }
+}

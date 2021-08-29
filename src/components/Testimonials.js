@@ -32,7 +32,7 @@ const Testimonial = () => {
       style={{ display: "flex", justifyContent: "center", marginTop: 50, marginBottom: 60 }}
     >
       <div style={{ width: "50%", textAlign: "center" }}>
-        <h1 style={{ marginBottom: 20 }}>What Well-wishers Say About Us</h1>
+        <h1 className="testimonial-header" style={{ marginBottom: 20 }}>What Well-wishers Say About Us</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots autoplay={true}>
           <CardTestimonial
             img={img1}
@@ -50,7 +50,7 @@ const Testimonial = () => {
             img={img3}
             text="Upward Bangladesh is the organization, carry on this impressive task with young characters. Ascension 2.0 was a well-organized event powered by Upward Bangladesh where I, Abu M. Fuad had performed as a Trainer of ‘Event Management’. I was pleased to see such immense responses from the young. Thanks to ‘Upward Bangladesh’ to prepare the field for my vital role. Upward Bangladesh is leading towards these uprisings."
             name="Abu M. Fuad"
-            designation="County Director, All India Council For Robotics & Automation"
+            designation="Country Director, All India Council For Robotics & Automation"
             designation2="CEO, Ektukhani Robotics"
           />
         </Slider>
