@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {HashRouter as Router, Route} from 'react-router-dom';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 // Pages
 import Home from './components/pages/home';
 import About from './components/pages/About';
@@ -148,6 +149,11 @@ class App extends Component {
             <DevelopedBy />
           </div>
         )} />
+
+        <MessengerCustomerChat
+          pageId="113515127035881"
+          appId="1448586972182878"
+        />
 
       </Router>
     );
