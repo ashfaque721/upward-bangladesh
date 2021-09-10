@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 // Pages
 import Home from './components/pages/home';
@@ -140,7 +140,7 @@ class App extends Component {
             <DevelopedBy />
           </div>
         )} />
-        
+
         <Route path="/collab-with-us" render={props => (
           <div>
             <Navbar />
