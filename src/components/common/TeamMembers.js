@@ -17,14 +17,18 @@ class TeamMembers extends Component {
           />
           <h4>{this.props.name}</h4>
           <p className='text-muted'>{this.props.designation}</p>
-          <a
-            className='btn btn-dark btn-social mx-2'
-            href={this.props.fb}
-            target='_blank'
-            rel='noreferrer'
-          >
-            <i className='fab fa-facebook-f'></i>
-          </a>
+          {this.props.fb ? (
+            <a
+              className='btn btn-dark btn-social mx-2'
+              href={this.props.fb}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <i className='fab fa-facebook-f'></i>
+            </a>
+          ) : (
+            ''
+          )}
           {this.props.linked ? (
             <a
               className='btn btn-dark btn-social mx-2'
