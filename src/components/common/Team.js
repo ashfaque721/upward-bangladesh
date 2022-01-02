@@ -11,6 +11,7 @@ import zunayed from '../assets/img/team/zunayed.jpg'
 import shoshi from '../assets/img/team/shoshi.jpg'
 import safa from '../assets/img/team/safa.jpg'
 import junayna from '../assets/img/team/junayna.jpg'
+import ekush from '../assets/img/team/ekush.jpg'
 
 const teamMembers = [
   {
@@ -50,7 +51,7 @@ const teamMembers = [
   },
   {
     name: 'Shemonti Rodosi',
-    designation: 'Content Creation Co-Ordinator',
+    designation: 'Chief of Content Creations',
     image: shemonti,
     fb: 'https://www.facebook.com/shemonti.rodosi.5',
     linked: '',
@@ -64,7 +65,7 @@ const teamMembers = [
   },
   {
     name: 'Tasfia Hoque Chittra',
-    designation: 'Public Relations Co-Ordinator',
+    designation: 'Chief of Public Relations',
     image: chittra,
     fb: 'https://www.facebook.com/hoque.chittu',
     linked: '',
@@ -90,6 +91,13 @@ const teamMembers = [
     designation: 'Administrations Co-Ordinator',
     image: junayna,
     fb: 'https://www.facebook.com/junayna.tahseen',
+    linked: '',
+  },
+  {
+    name: 'Tahsan Ekush',
+    designation: 'E-Creations Co-Ordinator',
+    image: ekush,
+    fb: 'https://www.facebook.com/tanzintahsanekush',
     linked: '',
   },
 ]
