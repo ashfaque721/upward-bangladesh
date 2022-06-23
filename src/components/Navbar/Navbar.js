@@ -1,82 +1,95 @@
-import React, { useState } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-import Dropdown from './Dropdown';
-import DropdownJoin from './DropdownJoin';
-import DropdownEvent from './DropdownEvent';
-import logo from '../assets/img/LOGO.png';
+import React, { useState } from 'react'
+import { Button } from './Button'
+import { Link } from 'react-router-dom'
+import './Navbar.css'
+import Dropdown from './Dropdown'
+import DropdownJoin from './DropdownJoin'
+import DropdownEvent from './DropdownEvent'
+import logo from '../assets/img/logo.png'
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  
-  const [dropdown, setDropdown] = useState(false);
-  const [dropdownEvent, setDropdownEvent] = useState(false);
-  const [dropdownJoin, setDropdownJoin] = useState(false);
+  const [click, setClick] = useState(false)
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const [dropdown, setDropdown] = useState(false)
+  const [dropdownEvent, setDropdownEvent] = useState(false)
+  const [dropdownJoin, setDropdownJoin] = useState(false)
+
+  const handleClick = () => setClick(!click)
+  const closeMobileMenu = () => setClick(false)
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown(false)
     } else {
-      setDropdown(true);
+      setDropdown(true)
     }
-  };
+  }
 
   const onMouseEnterJoin = () => {
     if (window.innerWidth < 960) {
-      setDropdownJoin(false);
+      setDropdownJoin(false)
     } else {
-      setDropdownJoin(true);
+      setDropdownJoin(true)
     }
-  };
-  
+  }
+
   const onMouseEnterEvent = () => {
     if (window.innerWidth < 960) {
-      setDropdownEvent(false);
+      setDropdownEvent(false)
     } else {
-      setDropdownEvent(true);
+      setDropdownEvent(true)
     }
-  };
+  }
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown(false)
     } else {
-      setDropdown(false);
+      setDropdown(false)
     }
-  };
+  }
 
   const onMouseLeaveJoin = () => {
     if (window.innerWidth < 960) {
-      setDropdownJoin(false);
+      setDropdownJoin(false)
     } else {
-      setDropdownJoin(false);
+      setDropdownJoin(false)
     }
-  };
+  }
 
   const onMouseLeaveEvent = () => {
     if (window.innerWidth < 960) {
-      setDropdownEvent(false);
+      setDropdownEvent(false)
     } else {
-      setDropdownEvent(false);
+      setDropdownEvent(false)
     }
-  };
+  }
 
   return (
     <>
       <nav className='navbar fixed-top'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <img className="visible-lg" src={logo} alt="upward" style={{height: "160px", width: "150px"}} />
+        <Link
+          to='/'
+          className='navbar-logo'
+          onClick={closeMobileMenu}
+        >
+          <img
+            className='visible-lg'
+            src={logo}
+            alt='upward'
+            style={{ height: '160px', width: '150px' }}
+          />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+            <Link
+              to='/'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
               Home
             </Link>
           </li>
@@ -97,7 +110,8 @@ function Navbar() {
           <li
             className='nav-item'
             onMouseEnter={onMouseEnterEvent}
-            onMouseLeave={onMouseLeaveEvent}>
+            onMouseLeave={onMouseLeaveEvent}
+          >
             <Link
               to='/events'
               className='nav-links'
@@ -105,9 +119,9 @@ function Navbar() {
             >
               Events <i className='fas fa-caret-down' />
             </Link>
-            {dropdownEvent && <DropdownEvent/>}
+            {dropdownEvent && <DropdownEvent />}
           </li>
-          
+
           <li className='nav-item'>
             <Link
               to='/contact'
@@ -122,10 +136,7 @@ function Navbar() {
             onMouseEnter={onMouseEnterJoin}
             onMouseLeave={onMouseLeaveJoin}
           >
-            <Link
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
+            <Link className='nav-links' onClick={closeMobileMenu}>
               Get Involved <i className='fas fa-caret-down' />
             </Link>
             {dropdownJoin && <DropdownJoin />}
@@ -143,7 +154,7 @@ function Navbar() {
         <Button />
       </nav>
     </>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
