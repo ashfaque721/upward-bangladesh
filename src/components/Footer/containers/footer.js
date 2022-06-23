@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/footer'
 import Icon from '../components/icons'
-import img from '../../assets/img/logo.png'
+import img from '../../assets/img/LOGO.png'
 import { Link } from 'react-router-dom'
 import '../../assets/css/footer.css'
 

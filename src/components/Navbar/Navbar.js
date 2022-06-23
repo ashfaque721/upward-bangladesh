@@ -5,7 +5,7 @@ import './Navbar.css'
 import Dropdown from './Dropdown'
 import DropdownJoin from './DropdownJoin'
 import DropdownEvent from './DropdownEvent'
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/LOGO.png'
 
 function Navbar() {
   const [click, setClick] = useState(false)
